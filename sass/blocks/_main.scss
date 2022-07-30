@@ -1,0 +1,76 @@
+.main {
+  padding-bottom: 80px;
+  &__container {
+    display: flex;
+  }
+
+  &__content {
+    flex: 0 1 50%;
+    align-self: flex-end;
+    padding-bottom: 60px;
+    padding-right: 20px;
+  }
+
+  &__title {
+    font-family: "Cal Sans";
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 67px;
+    color: #121212;
+    span {
+      color: #ff6428;
+    }
+  }
+  &__title:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  &__text {
+    font-weight: 500;
+    line-height: 24px;
+    max-width: 420px;
+  }
+  &__text:not(:last-child) {
+    margin-bottom: 31px;
+  }
+
+  &__actions {
+  }
+
+  &__decor {
+    flex: 0 1 50%;
+  }
+  &__img {
+    display: inline-block;
+    margin-right: -135px;
+    position: relative;
+    &::after {
+      content: "";
+      background: url("../img/main/decor.svg") 0 0 no-repeat;
+      width: 80px;
+      height: 80px;
+      right: 36.3%;
+      bottom: 0;
+      position: absolute;
+      transform: translateY(50%);
+    }
+  }
+}
+.actions-main {
+  display: flex;
+  align-items: center;
+  &__btn {
+    padding: 18.5px 48px;
+    background: #ff6428;
+    border-radius: 40px;
+    line-height: 28px;
+    font-weight: 600;
+    color: #fff;
+  }
+  &__btn:not(:last-child) {
+    margin-right: 40px;
+  }
+  &__icon:not(:last-child) {
+    margin-right: 27px;
+  }
+}
