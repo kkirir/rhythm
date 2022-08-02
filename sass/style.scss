@@ -52,12 +52,33 @@ body {
 .page {
   flex: 1 1 auto;
 }
-[class*="__container"] {
+[class*="__container"]  {
   max-width: 1230px;
   margin: 0 auto;
   padding: 0 15px;
+}
+.title{
+  font-family: "Cal Sans";
+  color:#121212;
+  font-size: 44px;
+  line-height: 1.2;
+  text-align: center;
+  span{
+    color: #ff6428;
+    font-family: "Cal Sans";
+  }
 }
 
 
 @import 'blocks/header';
 @import 'blocks/main';
+@import 'blocks/store';
+@import 'blocks/categories';
+@import 'blocks/best';
+
+
+
+
+
+
+@import 'blocks/media';

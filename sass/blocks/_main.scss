@@ -9,16 +9,19 @@
     align-self: flex-end;
     padding-bottom: 60px;
     padding-right: 20px;
+    padding-top: 120px;
+
   }
 
   &__title {
     font-family: "Cal Sans";
     font-weight: 600;
     font-size: 56px;
-    line-height: 67px;
+    line-height: 1.2;
     color: #121212;
     span {
       color: #ff6428;
+      font-family: "Cal Sans";
     }
   }
   &__title:not(:last-child) {
@@ -44,6 +47,10 @@
     display: inline-block;
     margin-right: -135px;
     position: relative;
+    img{
+      max-width: 672px;
+      border-radius: 0 0 160px 375px;
+    }
     &::after {
       content: "";
       background: url("../img/main/decor.svg") 0 0 no-repeat;
@@ -72,5 +79,10 @@
   }
   &__icon:not(:last-child) {
     margin-right: 27px;
+  }
+  &__icon {
+    &:last-child {
+      margin-bottom: 5px;
+    }
   }
 }

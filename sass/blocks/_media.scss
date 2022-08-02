@@ -1,0 +1,156 @@
+@media (max-width: 1200px) {
+  .header {
+    &__container {
+      gap: 90px;
+    }
+  }
+  .categories {
+    &__items {
+      gap: 30px;
+    }
+  }
+}
+@media (max-width: 1092px) {
+  .header {
+    &__container {
+      gap: 50px;
+      min-height: 100px;
+    }
+  }
+  .menu {
+    &__list {
+      gap: 35px;
+    }
+  }
+  .main {
+    &__img {
+      img {
+        width: 100%;
+      }
+    }
+    &__content {
+      flex: 0 0 60%;
+      padding-bottom: 0;
+    }
+    &__decor {
+      flex: 0 0 40%;
+    }
+  }
+  .best {
+    &__items {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 80px 160px;
+    }
+  }
+}
+@media (max-width: 991.98px) {
+  .store,
+  .categories,
+  .best {
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+  .main {
+    padding-bottom: 50px;
+  }
+  .categories {
+    &__title {
+      margin-bottom: 35px;
+    }
+    &__items {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+@media (max-width: 767.98px) {
+  .store,
+  .categories,
+  .best {
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+  .header {
+    &__container {
+      min-height: 65px;
+    }
+  }
+
+  .main {
+    &__content {
+      flex: 1 1 100%;
+      padding-right: 0;
+      padding-top: 80px;
+    }
+    &__decor {
+      display: none;
+    }
+    &__title {
+      font-size: 43px;
+    }
+  }
+  .body-store {
+    &__items {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 54px;
+    }
+  }
+  .best {
+    &__items {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 60px 80px;
+    }
+  }
+}
+@media (max-width: 520px) {
+  .categories {
+    
+    &__items {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
+@media (max-width: 479.98px) {
+  .header {
+    &__container {
+      gap: 20px;
+    }
+    &__logo {
+      width: 40px;
+      overflow: hidden;
+    }
+  }
+  .menu {
+    &__list {
+      gap: 20px;
+    }
+  }
+  .actions-main {
+    &__btn:not(:last-child) {
+      margin-right: 20px;
+    }
+    &__icon:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+  .body-store {
+    &__title,
+    &__all {
+      font-size: 17px;
+    }
+    &__items {
+      grid-template-columns: 1fr;
+      gap: 54px;
+    }
+  }
+  .categories,.best,.store{
+    &__title {
+      font-size: 36px;
+    }
+  }
+  .best {
+    &__items {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 10px;
+    }
+  }
+}
